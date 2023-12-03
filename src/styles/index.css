@@ -1,12 +1,37 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.bg-trans {
 
-*/
+    background: rgba(255, 255, 255, 0.318);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.bg-image {
+    background-image: url("https://picsum.photos/1920/1080");
+    background-size: cover;
+}
+
+.clock-digit {
+    color: rgb(232, 232, 232);
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    background: hsla(0, 0%, 71%, 1);
+    background: linear-gradient(rgba(38, 38, 38, 0.721) 50%, rgba(125, 125, 125, 0) 100%);
+}
+
+.clock-divider {
+    width: fit-content;
+    border-radius: 0;
+    background: none;
+    color: rgba(255, 255, 255, 0.742);
+}

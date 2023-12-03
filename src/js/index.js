@@ -6,7 +6,14 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import Clock from "./component/clock.jsx";
 
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+let contador = 0;
+
+setInterval(() => {
+  contador++;
+  ReactDOM.render(
+    <Clock contador={contador} />,
+    document.querySelector("#app")
+  );
+}, 1000);
